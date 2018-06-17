@@ -69,8 +69,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://github.com/mdh34/hackup/archive/1.0.2.tar.gz",
-                "sha256": "5f374e6303796b4da40936f664543bd67413fc2f4fa5782ceec92dc1e423a81b"
+                "url": "https://github.com/mdh34/hackup/archive/1.0.3.tar.gz",
+                "sha256": "f7900d9211d4e2f0f598c803d1313374f5860fe8425e9b150e78dbca6e4b90e4"
             }]
         }
     ]
