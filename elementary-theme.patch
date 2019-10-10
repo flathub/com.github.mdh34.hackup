@@ -1,0 +1,12 @@
+--- a/src/Application.vala	2019-09-25 14:38:15.000000000 +0200
++++ b/src/Application.vala	2019-10-11 00:54:28.231741684 +0200
+@@ -34,6 +34,9 @@
+     public override void activate () {
+         var window = new MainWindow (this);
+ 
++        Gtk.Settings.get_default().set_property("gtk-theme-name", "elementary");
++        Gtk.Settings.get_default().set_property("gtk-icon-theme-name", "elementary");
++
+         var provider = new Gtk.CssProvider ();
+         provider.load_from_resource ("/com/github/mdh34/hackup/Application.css");
+ 
