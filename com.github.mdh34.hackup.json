@@ -1,9 +1,9 @@
 {
     "app-id": "com.github.mdh34.hackup",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno",
+    "base-version": "juno-19.08",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
+    "runtime-version": "3.34",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.mdh34.hackup",
     "finish-args": [
@@ -12,10 +12,7 @@
         "--device=dri",
         "--socket=x11",
         "--socket=wayland",
-        "--talk-name=ca.desrt.dconf",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--metadata=X-DConf=migrate-path=/com/github/mdh34/hackup/"
     ],
     "modules": [
         {
@@ -26,8 +23,11 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://github.com/mdh34/hackup/archive/1.1.7.tar.gz",
-                "sha256": "69c2b3732a791498a8d8c77712e822424be5790327bb4f7729c35e878e6a6bb2"
+                "url": "https://github.com/mdh34/hackup/archive/1.1.8.tar.gz",
+                "sha256": "c2391d56f0413803be329dd1942132fd9ddc1021649868e61281d8dccffe2b1b"
+            },{
+                "type": "patch",
+                "path": "elementary-theme.patch"
             }]
         }
     ]
