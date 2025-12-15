@@ -28,6 +28,9 @@
             },{
                 "type": "patch",
                 "path": "elementary-theme.patch"
+            },{
+                "type": "patch",
+                "path": "fix_appdata.patch"
             }]
         }
     ]
